@@ -8,7 +8,7 @@ import { MdCreate } from "react-icons/md";
 import Card from "./Components/Cards";
 import Footer from "./Components/Footer";
 import { getAuth } from "firebase/auth";
-import app from "../app/firebase/config";
+//import app from "../app/firebase/config";
 import { useRouter } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
   // Navigating users with acct to their dashboad
   // and directing users with no acct to home page that has a sign up button...
   useEffect(() => {
-    const auth = getAuth(app);
+    const auth = getAuth();
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
         router.push("/dashboard/feed");

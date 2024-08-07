@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { signInWithPopup, GoogleAuthProvider, getAuth } from "firebase/auth";
-import app from "../firebase/config";
+// import app from "../firebase/config";
 import { auth } from "../firebase/config";
 import { useRouter } from "next/navigation";
 import Spinner from "../Components/Spinner";
@@ -41,7 +41,7 @@ const Login: React.FC = () => {
 
   // Logging in with Google...
   const LogInWithGoogle = async () => {
-    const auth = getAuth(app);
+    const auth = getAuth();
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);

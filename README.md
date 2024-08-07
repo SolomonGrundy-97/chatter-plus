@@ -39,7 +39,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/chatter-plus.git
+   git clone https://github.com/SolomonGrundy-97/chatter-plus.git
    cd chatter-plus
 Install dependencies:
 

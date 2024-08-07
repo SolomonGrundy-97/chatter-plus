@@ -6,7 +6,7 @@ import { User } from "firebase/auth";
 interface NavbarProps {
   user: User | null;
   mobileMenu: boolean;
-  setMobileMenu: (value: boolean) => void;
+  setMobileMenu: (value: boolean | ((prev: boolean) => boolean)) => void;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ user, mobileMenu, setMobileMenu }) => {
