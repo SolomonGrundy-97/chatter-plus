@@ -4,7 +4,8 @@ import { FiAlignRight } from "react-icons/fi";
 import { User } from "firebase/auth";
 
 interface NavbarProps {
-  user: User | null;
+  user: User | null | undefined;
+  //user: User | null;
   mobileMenu: boolean;
   setMobileMenu: (value: boolean | ((prev: boolean) => boolean)) => void;
 }
