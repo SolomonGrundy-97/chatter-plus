@@ -4,7 +4,7 @@
     "plugin:testing-library/react",
     "plugin:jest-dom/recommend"
 ],
-  "plugins": ["jest-dom"],
+  "plugins": ["testing-library", "jest-dom"],
   "rules": {
     // Your custom rules
   }
