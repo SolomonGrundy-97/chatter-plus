@@ -31,6 +31,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
+    "@types/aos": "^3.0.7",
     "@types/jest": "^29.5.12",
     "@types/node": "^20",
     "@types/react": "^18",
@@ -47,6 +48,6 @@
     "testcafe": "^3.6.2",
     "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "typescript": "5.4.x"
   }
 }

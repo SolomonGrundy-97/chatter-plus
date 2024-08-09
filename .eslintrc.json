@@ -2,10 +2,10 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:testing-library/react",
-    "plugin:jest-dom/recommend"
+    "plugin:jest-dom/recommended"
 ],
   "plugins": ["testing-library", "jest-dom"],
   "rules": {
-    // Your custom rules
+    "react/no-unescaped-entities": "off"
   }
 }
